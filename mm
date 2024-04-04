@@ -21,6 +21,9 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 5
 Main.Position = UDim2.new(0.15518707, 0, 0.10402219, 0)
 Main.Size = UDim2.new(0, 557, 0, 291)
+Main.Selectable = true
+Main.Active = true
+Main.Draggable = true
 
 Watermark.Name = "Watermark"
 Watermark.Parent = Main

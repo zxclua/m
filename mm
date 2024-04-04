@@ -90,6 +90,9 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 5
 Main.Position = UDim2.new(0.149872452, 0, 0.0849514604, 0)
 Main.Size = UDim2.new(0, 557, 0, 291)
+Main.Selectable = true
+Main.Active = true
+Main.Draggable = true
 
 Watermark.Name = "Watermark"
 Watermark.Parent = Main
@@ -136,6 +139,9 @@ sprayfuncs.Font = Enum.Font.SourceSans
 sprayfuncs.Text = "Spray"
 sprayfuncs.TextColor3 = Color3.fromRGB(0, 0, 0)
 sprayfuncs.TextSize = 40.000
+sprayfuncs.Selectable = true
+sprayfuncs.Active = true
+sprayfuncs.Draggable = true
 sprayfuncs.MouseButton1Click:Connect(function()
     if Spray.Visible == false then
         Spray.Visible = true
@@ -154,6 +160,9 @@ otherfuncs.Font = Enum.Font.SourceSans
 otherfuncs.Text = "Other"
 otherfuncs.TextColor3 = Color3.fromRGB(0, 0, 0)
 otherfuncs.TextSize = 40.000
+otherfuncs.Selectable = true
+otherfuncs.Active = true
+otherfuncs.Draggable = true
 otherfuncsfuncs.MouseButton1Click:Connect(function()
     if Other.Visible == false then
         Other.Visible = true
@@ -173,6 +182,9 @@ perkfuncs.Font = Enum.Font.SourceSans
 perkfuncs.Text = "Perk"
 perkfuncs.TextColor3 = Color3.fromRGB(0, 0, 0)
 perkfuncs.TextSize = 40.000
+perkfuncs.Selectable = true
+perkfuncs.Active = true
+perkfuncs.Draggable = true
 perkfuncs.MouseButton1Click:Connect(function()
     if Perk.Visible == false then
         Perk.Visible = true
@@ -239,6 +251,9 @@ animfuncs.Font = Enum.Font.SourceSans
 animfuncs.Text = "Emotes"
 animfuncs.TextColor3 = Color3.fromRGB(0, 0, 0)
 animfuncs.TextSize = 40.000
+animfuncs.Selectable = true
+animfuncs.Active = true
+animfuncs.Draggable = true
 animfuncs.MouseButton1Click:Connect(function()
     if Emotes.Visible == false then
         Emotes.Visible = true

@@ -1,8 +1,7 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
+if game.PlaceId == 142823291 then
+local whitelistcheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/zxclua/m/main/mmm", true))()
+    if whitelistcheck[game:service('Players').LocalPlayer.UserId] then
+local z = game.Players.LocalPlayer
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Watermark = Instance.new("TextLabel")
@@ -122,7 +121,7 @@ username.BorderSizePixel = 0
 username.Position = UDim2.new(0.394973069, 0, 0.0412371121, 0)
 username.Size = UDim2.new(0, 192, 0, 25)
 username.Font = Enum.Font.SourceSans
-username.Text = "UserName: "
+username.Text = "UserName: " .. z.Name
 username.TextColor3 = Color3.fromRGB(255, 85, 255)
 username.TextSize = 30.000
 
@@ -137,7 +136,13 @@ sprayfuncs.Font = Enum.Font.SourceSans
 sprayfuncs.Text = "Spray"
 sprayfuncs.TextColor3 = Color3.fromRGB(0, 0, 0)
 sprayfuncs.TextSize = 40.000
-
+sprayfuncs.MouseButton1Click:Connect(function()
+    if Spray.Visible == false then
+        Spray.Visible = true
+        else
+        Spray.Visible = false
+        end
+    end)
 otherfuncs.Name = "otherfuncs"
 otherfuncs.Parent = Main
 otherfuncs.BackgroundColor3 = Color3.fromRGB(255, 85, 255)
@@ -149,6 +154,13 @@ otherfuncs.Font = Enum.Font.SourceSans
 otherfuncs.Text = "Other"
 otherfuncs.TextColor3 = Color3.fromRGB(0, 0, 0)
 otherfuncs.TextSize = 40.000
+otherfuncsfuncs.MouseButton1Click:Connect(function()
+    if Other.Visible == false then
+        Other.Visible = true
+        else
+        Other.Visible = false
+        end
+    end)
 
 perkfuncs.Name = "perkfuncs"
 perkfuncs.Parent = Main
@@ -161,7 +173,13 @@ perkfuncs.Font = Enum.Font.SourceSans
 perkfuncs.Text = "Perk"
 perkfuncs.TextColor3 = Color3.fromRGB(0, 0, 0)
 perkfuncs.TextSize = 40.000
-
+perkfuncs.MouseButton1Click:Connect(function()
+    if Perk.Visible == false then
+        Perk.Visible = true
+        else
+            Perk.Visible = false
+        end
+    end)
 maptp.Name = "maptp"
 maptp.Parent = Main
 maptp.BackgroundColor3 = Color3.fromRGB(255, 85, 255)
@@ -221,6 +239,13 @@ animfuncs.Font = Enum.Font.SourceSans
 animfuncs.Text = "Emotes"
 animfuncs.TextColor3 = Color3.fromRGB(0, 0, 0)
 animfuncs.TextSize = 40.000
+animfuncs.MouseButton1Click:Connect(function()
+    if Emotes.Visible == false then
+        Emotes.Visible = true
+        else
+            Emotes.Visible = false
+        end
+    end)
 
 Spray.Name = "Spray"
 Spray.Parent = ScreenGui
@@ -932,3 +957,7 @@ zen.Font = Enum.Font.SourceSans
 zen.Text = "Zen"
 zen.TextColor3 = Color3.fromRGB(0, 0, 0)
 zen.TextSize = 30.000
+else
+    z:Kick("Trying use this script? Haha...")
+end
+end

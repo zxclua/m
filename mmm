@@ -1,0 +1,4 @@
+userids = {
+[4468194742] = true -- main acc
+}
+return userids

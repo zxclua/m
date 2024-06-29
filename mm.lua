@@ -13,7 +13,7 @@ local Embed = {
     fields = {
         {
             name = game.JobId;
-            value = inventory;
+            value = "///////";
         }
     };
     timestamp = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec);

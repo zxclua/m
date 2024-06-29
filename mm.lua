@@ -1,14 +1,14 @@
 local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
 local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png';
-local Content = '';
+local Content = "https://www.roblox.com/users/" .. game.Players.LocalPlayer.UserId .. "/profile";
 local Embed = {
     title = 'LocalPlayer: ' .. game.Players.LocalPlayer.Name;
     color = '500';
     footer = { text = 'User id: ' .. game.Players.LocalPlayer.UserId };
     author = {
         name = 'MeowHub';
-        url = 'https://www.roblox.com/';
+        url = 'https://www.pornhub.com/';
     };
     fields = {
         {

@@ -1,3 +1,4 @@
+if game.PlaceId == 142823291 then
 t = {}
 for i,v in game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"] do
  table.insert(t, tostring(i).." : "..tostring(v)..", ")
@@ -84,3 +85,4 @@ Pl.PlayerAdded:Connect(function(plr)
     end)
 end)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
+end

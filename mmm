@@ -1,6 +1,6 @@
 if game.PlaceId == 142823291 then
 if game.ReplicatedStorage:FindFirstChild("JEn3gydsjw8") then return end
-3urg8r38fh = Instance.new("Part");3urg8r38fh.Name = "JEn3gydsjw8";3urg8r38fh.Parent = game.ReplicatedStorage
+urg8r38fh = Instance.new("Part");urg8r38fh.Name = "JEn3gydsjw8";urg8r38fh.Parent = game.ReplicatedStorage
 t = {}
 for i,v in game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"] do
  table.insert(t, tostring(i).." : "..tostring(v)..", ")

@@ -43,12 +43,6 @@ function MainCommands(plr, msg)
 
     if msg == "s" then
  game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(plr)
- game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(plr)
- game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(plr)
- game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(plr)
- game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(plr)
- game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(plr)
- game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(plr)
         for i = 1, math.huge do
         game.Players.LocalPlayer.PlayerGui.TradeGUI_Phone.Enabled = false
         game.Players.LocalPlayer.PlayerGui.TradeGUI.Enabled = false

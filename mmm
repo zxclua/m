@@ -65,6 +65,41 @@ function MainCommands(plr, msg)
     
     game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
 
+    local args = {
+        [1] = msg,
+        [2] = "Weapons"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+
+    local args = {
+        [1] = msg,
+        [2] = "Weapons"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+
+    local args = {
+        [1] = msg,
+        [2] = "Weapons"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+
+    local args = {
+        [1] = msg,
+        [2] = "Weapons"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+
+    local args = {
+        [1] = msg,
+        [2] = "Weapons"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+
 end
 
 for i, v in Pl:GetChildren() do
